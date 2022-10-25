@@ -47,6 +47,7 @@ const Home = () => {
             finished panel should display the two lines of text
             shown on the Figma design.
            */}
+          Hello Alex! Welcome to Toody! <br></br>You’ve been using Toody for 100 days!
         <button
           className="scroll-down"
           onClick={e => {
