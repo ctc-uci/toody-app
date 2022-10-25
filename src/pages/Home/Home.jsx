@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
@@ -38,6 +38,15 @@ const entries = [
 ];
 
 const Home = () => {
+  const [count, setCount] = useState(0);
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    setTimeout(() => {
+      const count = Math.floor(Math.random() * 101);
+      setCount(count, []);
+    });
+  });
   return (
     <div className="home">
       <div className="landing">
@@ -47,7 +56,7 @@ const Home = () => {
             finished panel should display the two lines of text
             shown on the Figma design.
            */}
-          Hello Alex! Welcome to Toody! <br></br>You’ve been using Toody for 100 days!
+        Hello Alex! Welcome to Toody! <br></br>You’ve been using Toody for {count} days!
         <button
           className="scroll-down"
           onClick={e => {
