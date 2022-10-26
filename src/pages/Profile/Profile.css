@@ -1,9 +1,9 @@
 .profile-page {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* TODO: Add your styles here
@@ -15,10 +15,10 @@
     */
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    /* background-color: DodgerBlue; */
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  /* background-color: DodgerBlue; */
+  align-items: center;
 }
 
 /* .flex-container>div {
@@ -27,81 +27,75 @@
 
 } */
 
-
 .picture-circle {
-    /* Auto layout */
+  /* Auto layout */
 
+  display: flex;
 
-    display: flex;
+  align-items: center;
+  justify-content: center;
 
-    align-items: center;
-    justify-content: center;
+  position: flex;
+  width: 400px;
+  height: 400px;
+  /* left: 153px; */
 
-    position: flex;
-    width: 400px;
-    height: 400px;
-    /* left: 153px; */
+  /* Neutral/6 */
 
-    /* Neutral/6 */
-
-    background: #BFBFBF;
-    border-radius: 50%;
+  background: #bfbfbf;
+  border-radius: 50%;
 }
 
 .center {
-    display: absolute;
+  display: absolute;
 }
 
 .text-container {
-    position: flex;
-    display: flex;
+  position: flex;
+  display: flex;
 
-    height: 400px;
+  height: 400px;
 
-    /* Toody Large */
+  /* Toody Large */
 
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    text-align: left;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: left;
+  padding-left: 64px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .text-col {
-    /* background: rgb(142, 36, 36); */
-    position: flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-
-
+  /* background: rgb(142, 36, 36); */
+  position: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .text-row {
-    /* background: rgb(78, 142, 36); */
-    position: flex;
-    height: 20%;
-    margin: 10px;
-    margin-right: 20px;
-    /* padding: 20px; */
-
+  /* background: rgb(78, 142, 36); */
+  position: flex;
+  height: 20%;
+  margin: 10px;
+  margin-right: 20px;
+  /* padding: 20px; */
 }
 
 .text-numbers-font {
+  /* Toody Extra Large */
 
-    /* Toody Extra Large */
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  text-align: left;
 
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    text-align: left;
+  /* White */
 
-    /* White */
-
-    color: #FFFFFF;
-
+  color: #ffffff;
 }

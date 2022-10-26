@@ -13,54 +13,35 @@ const Profile = ({ firstName, lastName, stats }) => {
       already been imported for you on line 3.
       For the name & stats to display, use the props (firstName, lastName, and stats)
       that have already been declared. */}
-      <div className='flex-container'>
+      <div className="flex-container">
         <div className="picture-circle">
           <img className="center" src={person}></img>
         </div>
         <div className="text-container">
-          <div className='text-col'>
-            <div className='text-row'>
+          <div className="text-col">
+            <div className="text-row">
               {firstName} {lastName}
             </div>
-            <div className='text-row'>
-              <div className='text-numbers-font'>
-                {stats[0]}
-              </div>
+            <div className="text-row">
+              <div className="text-numbers-font">{stats[0]['number']}</div>
             </div>
-            <div className='text-row'>
-              Cool Stat
-            </div>
-
+            <div className="text-row">{stats[0]['description']}</div>
           </div>
-          <div className='text-col'>
-            <div className='text-row'>
-
+          <div className="text-col">
+            <div className="text-row"></div>
+            <div className="text-row">
+              <div className="text-numbers-font">{stats[1]['number']}%</div>
             </div>
-            <div className='text-row'>
-              <div className='text-numbers-font'>
-                {stats[1]}%
-              </div>
-            </div>
-            <div className='text-row'>
-              Another Cool Stat
-            </div>
-
+            <div className="text-row">{stats[1]['description']}</div>
           </div>
-          <div className='text-col'>
-            <div className='text-row'>
+          <div className="text-col">
+            <div className="text-row"></div>
+            <div className="text-row">
+              <div className="text-numbers-font">{stats[2]['number']}</div>
             </div>
-            <div className='text-row'>
-              <div className='text-numbers-font'>
-                {stats[2]}
-              </div>
-            </div>
-            <div className='text-row'>
-              Journal Entries
-            </div>
-
+            <div className="text-row">{stats[2]['description']}</div>
           </div>
         </div>
-
       </div>
     </div>
   );
