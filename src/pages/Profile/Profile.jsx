@@ -17,7 +17,6 @@ const Profile = ({ firstName, lastName, stats }) => {
 
   return (
     <div className="profile-page">
-      <Header />
       <div className="pfp-container">
         <img src={person} className="pfp"></img>
       </div>
