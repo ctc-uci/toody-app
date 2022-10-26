@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
@@ -38,6 +38,12 @@ const entries = [
 ];
 
 const Home = () => {
+  const [rand, setRand] = useState(0);
+
+  useEffect(() => {
+    setRand(Math.floor(Math.random() * 100 + 1));
+  }, []);
+
   return (
     <div className="home">
       <div className="landing">
@@ -47,6 +53,11 @@ const Home = () => {
             finished panel should display the two lines of text
             shown on the Figma design.
            */}
+        <p>
+          {' '}
+          Hello Alex! Welcome to Toody. <br /> You&apos;ve been using Toody for the past {rand}{' '}
+          days!{' '}
+        </p>
         <button
           className="scroll-down"
           onClick={e => {
