@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import person from '../../images/person.png';
-import Header from '../../components/Header/Header';
 // ^^ blank avatar for profile pic, uncomment the above line to use
 import './Profile.css';
 
