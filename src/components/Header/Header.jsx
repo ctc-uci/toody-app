@@ -15,7 +15,7 @@ const Header = () => {
         should route the user to the Profile page correctly. */
         <><img src={toody} alt="Toody Logo"></img>
         <div className="myProfileLink">
-          <Link to={"/Profile"}> My Profile </Link>
+          <Link to={"/profile"}> My Profile </Link>
         </div>
         <div className="logoText">
           <p>Toody</p>
