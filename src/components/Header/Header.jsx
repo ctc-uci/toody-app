@@ -7,14 +7,14 @@ import './Header.css';
 const Header = () => {
   return (
     <div className="header">
-      <div>
-        <img style={{ position: 'absolute', top: '40%', left: '4%' }} src={toody} />
+      <img style={{ position: 'relative', top: '40%', left: '4%' }} src={toody} />
+      <div className="logoName">
+        <p style={{ fontSize: '25px' }}>Toody</p>
       </div>
-      <p style={{ position: 'absolute', top: '18%', left: '7.5%', fontSize: '25px' }}>Toody</p>
       <Link
         style={{
           position: 'absolute',
-          marginLeft: '90%',
+          marginLeft: '87%',
           top: '48%',
           textDecoration: 'none',
           color: 'white',

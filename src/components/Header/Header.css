@@ -3,3 +3,19 @@
     width: 100vw;
     height: 8vw;
 }
+
+.logoName {
+    position: absolute;
+    height: 50px;
+    width: 10px;
+    left: 9.5%;
+    top: 35%;
+}
+
+p {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
