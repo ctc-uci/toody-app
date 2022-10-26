@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
@@ -38,6 +38,13 @@ const entries = [
 ];
 
 const Home = () => {
+  const [daysUsed, setDaysUsed] = useState();
+  const daysUsedMessage = `You've been using Toody for ${daysUsed} days!`;
+
+  useEffect(() => {
+    setDaysUsed(Math.floor(Math.random() * 100) + 1);
+  }, []);
+
   return (
     <div className="home">
       <div className="landing">
@@ -47,6 +54,8 @@ const Home = () => {
             finished panel should display the two lines of text
             shown on the Figma design.
            */}
+        <div className="greeting-1">Hello Alex! Welcome to Toody.</div>
+        <div className="greeting-2">{daysUsedMessage}</div>
         <button
           className="scroll-down"
           onClick={e => {
