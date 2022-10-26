@@ -9,7 +9,9 @@ const Header = () => {
     <div className="header">
       <img style={{ position: 'relative', top: '40%', left: '4%' }} src={toody} />
       <div className="logoName">
-        <p style={{ fontSize: '25px' }}>Toody</p>
+        <p id="toodyP" style={{ fontSize: '25px' }}>
+          Toody
+        </p>
       </div>
       <Link
         style={{

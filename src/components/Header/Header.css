@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: absolute;
     width: 100vw;
     height: 8vw;
 }
@@ -9,10 +9,10 @@
     height: 50px;
     width: 10px;
     left: 9.5%;
-    top: 35%;
+    top: 33%;
 }
 
-p {
+#toodyP {
     position: absolute;
     margin: 0;
     top: 50%;
