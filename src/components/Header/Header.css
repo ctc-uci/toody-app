@@ -5,3 +5,23 @@
 
 /* TODO: Add styling for your Header component
 here. */
+
+.todoy {
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.todoy-text {
+    vertical-align: bottom;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.my-profile {
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    text-decoration: none !important;
+    color: white;
+}
