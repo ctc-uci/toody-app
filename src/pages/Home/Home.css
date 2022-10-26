@@ -3,11 +3,20 @@
     background-color: #32936F;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     justify-content: center;
-    text-align: left;
 
     font-size: 64px;
+}
+
+.welcome {
+    margin-left: 100px;
+}
+
+.count-days {
+    text-align: right;
+    margin-right: 100px;
 }
 
 /* TODO: Once you've added
@@ -24,6 +33,7 @@
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    left: 50%;
 }
 
 .to-do {
