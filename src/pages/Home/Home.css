@@ -2,7 +2,7 @@
     height: 100vh;
     background-color: #32936F;
 
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -16,6 +16,18 @@
     style them. These styles can be colors,
     margins, or anything you like, as long as
     the outcome reflects the Figma. */
+
+#line1{
+    position: absolute;
+    margin: 250px 0 0 150px;
+    padding: 10px;
+}
+
+#line2{
+    position: absolute;
+    margin: 400px 0 0 350px;
+    padding: 10px;
+}
 
 .scroll-down {
     position: absolute;
