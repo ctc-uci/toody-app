@@ -1,8 +1,41 @@
 .profile-page {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.pfp-container {
+  background-color: #bfbfbf;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: 50%;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+.pfp {
+  margin: 0;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.stats {
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.number {
+  font-size: 50px;
+}
+
+.description {
+  font-size: 30px;
 }
 
 /* TODO: Add your styles here
@@ -12,7 +45,3 @@
          and height of the browser window.
          This will help you when you get started.
     */
-
-
-
-
