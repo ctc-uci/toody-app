@@ -30,7 +30,7 @@ const Profile = ({ firstName, lastName, stats }) => {
           <div className="text-col">
             <div className="text-row"></div>
             <div className="text-row">
-              <div className="text-numbers-font">{stats[1]['number']}%</div>
+              <div className="text-numbers-font">{stats[1]['number']}</div>
             </div>
             <div className="text-row">{stats[1]['description']}</div>
           </div>
