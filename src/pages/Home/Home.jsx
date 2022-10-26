@@ -55,7 +55,6 @@ const Home = () => {
             (the "landing page," as this div is named.) The
             finished panel should display the two lines of text
             shown on the Figma design.
-            Hello Alex! Welcome to Toody!<br></br>You’ve been using Toody for {count} days!
            */}
         <div className="welcome">Hello Alex! Welcome to Toody.</div>
         <div className="count-days">You’ve been using Toody for {count} days!</div>
