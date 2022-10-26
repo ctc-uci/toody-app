@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import person from '../../images/person.png';
-// import Stat from '../../components/Stat/Stat'
 import './Profile.css';
 
 const Profile = ({ firstName, lastName, stats }) => {
