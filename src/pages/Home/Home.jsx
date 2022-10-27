@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
@@ -38,15 +38,19 @@ const entries = [
 ];
 
 const Home = () => {
+  const [days, setDays] = useState(0);
+
+  useEffect(() => {
+    setDays(Math.floor(Math.random() * 100 + 1));
+  }, []);
+
   return (
     <div className="home">
       <div className="landing">
-        {/* TODO:
-            Add code here to display the text on the top panel
-            (the "landing page," as this div is named.) The
-            finished panel should display the two lines of text
-            shown on the Figma design.
-           */}
+        <div>
+          <p id="name-welcome">Hello Alex! Welcome to Toody. </p>
+          <p id="num-days">You&apos;ve been using Toody for {days} days!</p>
+        </div>
         <button
           className="scroll-down"
           onClick={e => {
