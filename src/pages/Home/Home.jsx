@@ -42,6 +42,7 @@ const Home = () => {
     <div className="home">
       <div className="landing">
         <p>Hi</p>
+        <p>Here you go Hang</p>
         {/* TODO:
             Add code here to display the text on the top panel
             (the "landing page," as this div is named.) The
