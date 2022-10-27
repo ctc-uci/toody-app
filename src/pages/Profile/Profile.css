@@ -13,6 +13,60 @@
          This will help you when you get started.
     */
 
+.text {
+    /* flex-direction: column; */
+    margin: auto;
+    width: 800px;
+}
 
+#circle img {
+    /* display: flex;
+    justify-content: left; */
+    height: 125px;
+    margin: auto;
+    
 
+}
+
+.name {
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0 5% 0 5%;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    
+}
+
+.number {
+    font-weight: 400;
+    font-size: 64px;
+    margin: 0;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+}
+
+#circle {
+    background: #BFBFBF;
+    border-radius: 100%;
+    /* width: 30%;
+    height: 30%; */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin: 3%;
+}
+
+.statgroup {
+    margin: 0 5% 0 5%;
+}
 
