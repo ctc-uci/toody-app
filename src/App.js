@@ -5,6 +5,8 @@ import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
 import './App.css';
 
+// Group 4: Maithy Le, Noah Arsala, Sravan Tallapaka
+
 // hard coded user
 const firstName = 'Jennifer';
 const lastName = 'Wong';

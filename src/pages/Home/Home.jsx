@@ -1,10 +1,9 @@
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
 import { SlArrowDown } from 'react-icons/sl';
 import './Home.css';
-
 // hard coded to do list items
 const items = [
   { id: '1', item: 'Go to costco to get gas' },
@@ -38,6 +37,12 @@ const entries = [
 ];
 
 const Home = () => {
+  const [days, setDays] = useState(0);
+
+  useEffect(() => {
+    setDays(Math.floor(Math.random() * 100) + 1);
+  }, []);
+
   return (
     <div className="home">
       <div className="landing">
@@ -47,6 +52,8 @@ const Home = () => {
             finished panel should display the two lines of text
             shown on the Figma design.
            */}
+        <p className="top_text">Hello Alex! Welcome to Toody!</p>
+        <p className="bottom_text">You’ve been using Toody for {days} days!</p>
         <button
           className="scroll-down"
           onClick={e => {

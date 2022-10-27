@@ -5,6 +5,66 @@
     align-items: center;
 }
 
+.pfp {
+    padding: 100px;
+    background: #BFBFBF;
+    border-radius: 100px;
+    left: 153px;
+    top: 255px;
+    position: absolute;
+}
+
+.person_name{
+    position: absolute;
+    top: 355px;
+    left: 649px;
+    font-size: 36px;
+}
+
+/* all the stat numbers */
+.stats_numbers{
+    font-size: 64px;
+    margin: 0;
+}
+
+/* cool stat, another stat, journal entries */
+.stats_description{
+    font-size: 36px;
+    margin: 0;
+}
+
+.stats_box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 258px;
+    height: 145px;
+    
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.stats_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 45px;
+
+    position: absolute;
+    width: 685px;
+    height: 145px;
+    left: 642px;
+    top: 400px;
+}
+
 /* TODO: Add your styles here
          for the Profile page.
          Hint: The lines above ensure that

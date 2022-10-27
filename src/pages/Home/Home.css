@@ -5,11 +5,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 
     font-size: 64px;
 }
 
+.top_text{
+    text-align: left;
+    position: absolute;
+    width: 1412px;
+    height: 87px;
+    left: 100px;
+    top: 29.6%;
+
+}
+
+.bottom_text{
+    text-align: right;
+    position: absolute;
+    width: 1412px;
+    height: 87px;
+    right: 100px;
+    top: 40.9%;
+}
 /* TODO: Once you've added
     HTML elements to complete the top panel,
     or the "landing" page, add CSS here to
