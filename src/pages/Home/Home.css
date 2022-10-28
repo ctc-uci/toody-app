@@ -16,26 +16,24 @@
 
 .landing #hello {
     position: relative;
-    left: 100px;
-    height: 87px;
+    left: 10%;
+    height:fit-content;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
-    line-height: 87px;
     text-align: left;
     margin: 0 0 26px 0;
 }
 
 .landing #days {
     position: relative;
-    right: 100px;
-    height: 87px;
+    right: 10%;
+    height:fit-content;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
-    line-height: 87px;
     text-align: right;
     margin: 0;
 }
