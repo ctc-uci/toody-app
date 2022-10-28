@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
@@ -38,6 +38,14 @@ const entries = [
 ];
 
 const Home = () => {
+  let [randomInt, setRandomInt] = useState(0);
+  useEffect(() => {
+    console.log("USEEFFECT CALLED");
+    const min = 1;
+    const max = 100;
+    setRandomInt(Math.trunc(min + (Math.random() * (max-min))));
+  });
+
   return (
     <div className="home">
       <div className="landing">
@@ -46,7 +54,14 @@ const Home = () => {
             (the "landing page," as this div is named.) The
             finished panel should display the two lines of text
             shown on the Figma design.
-           */}
+          
+          */}
+        <div className = "welcome">
+          <p className = "firstline">Hello Alex! Welcome to Toody.</p> 
+          <p className = "secondline">You&apos;e been using Toody for {randomInt} days!</p>
+        </div>
+      
+          
         <button
           className="scroll-down"
           onClick={e => {

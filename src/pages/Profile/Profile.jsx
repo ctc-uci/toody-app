@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import person from '../../images/person.png';
+import Stat from '../../components/Stat/Stat.jsx';
+import person from '../../images/person.png';
 // ^^ blank avatar for profile pic, uncomment the above line to use
 import './Profile.css';
 
@@ -13,7 +14,17 @@ const Profile = ({ firstName, lastName, stats }) => {
       already been imported for you on line 3.
       For the name & stats to display, use the props (firstName, lastName, and stats)
       that have already been declared. */}
-      {firstName} {lastName} {stats}
+      <img className="circle" src={person} alt="p" />
+      <div className="body">
+        <p>
+          {firstName} {lastName}
+        </p>
+        <div className="stats">
+          {stats.map(o => (
+            <Stat key={o.toString()} name={o.description} statistics={o.number} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

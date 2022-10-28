@@ -12,7 +12,26 @@
          and height of the browser window.
          This will help you when you get started.
     */
+.content{
+    color: white;
+
+}
+
+.circle {
+    background: rgb(205, 205, 205);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: 15rem;
+}
 
 
+.body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+    font: 'Nunito';
+    font-size: 30px;
+    color: white;
 
-
+}

@@ -16,6 +16,19 @@
     style them. These styles can be colors,
     margins, or anything you like, as long as
     the outcome reflects the Figma. */
+.firstline{
+    font-family: 'Nunito';
+    color: white;
+    float: left;
+
+}
+
+.secondline{
+    font-family: 'Nunito';
+    color: white;
+    margin-top: -2.5rem;
+    float: right;
+}
 
 .scroll-down {
     position: absolute;
