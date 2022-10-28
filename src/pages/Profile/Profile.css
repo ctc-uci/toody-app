@@ -13,6 +13,43 @@
          This will help you when you get started.
     */
 
+.stats {
+    font-family: 'Nunito';
+    margin-left: -236px;
+}
 
+#numbers {
+    display: flex;
+    font-size: 50px;
+    column-gap: 150px;
+    margin-top: 60px;
+}
+
+#descriptions {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin-top: 10px;
+}
+
+#name {
+    display: flex;
+    font-family: 'Nunito';
+    font-size: 36px;
+    margin-left: 100px;
+    margin-top: -90px;
+}
+
+.avatar {
+    display: flex;
+    background-color: rgb(204, 202, 202);
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 75%;
+    margin-left: 200px;
+}
 
 
