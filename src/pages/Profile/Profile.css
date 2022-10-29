@@ -2,17 +2,45 @@
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    font-size: 2.25rem;
 }
 
-/* TODO: Add your styles here
-         for the Profile page.
-         Hint: The lines above ensure that
-         the page takes up the full width
-         and height of the browser window.
-         This will help you when you get started.
-    */
+.main-profile {
+    max-width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+}
 
+.avatar {
+    width: 27rem;
+    height: 27rem;
+    border-radius: calc(27rem / 2);
+    background: #BFBFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
 
+.avatar img {
+    width: calc(100% * 0.42);
+    height: auto;
+    flex-grow: 0;
+}
 
+.profile-info h2 {
+    font-style: normal;
+    font-weight: 400;
+}
 
+.profile-stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}

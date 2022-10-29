@@ -1,0 +1,14 @@
+.profile-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.profile-stat p {
+    margin: 0;
+}
+
+
+.profile-stat-num {
+    font-size: 4rem;
+}
