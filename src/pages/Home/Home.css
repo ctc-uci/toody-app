@@ -16,6 +16,10 @@
     style them. These styles can be colors,
     margins, or anything you like, as long as
     the outcome reflects the Figma. */
+h1{
+    text-align:left;
+    font-size:64px;
+}
 
 .scroll-down {
     position: absolute;
