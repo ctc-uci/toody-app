@@ -1,11 +1,22 @@
 import React from 'react';
-// import toody from '../../images/toody.svg';
+import toody from '../../images/toody.svg';
+
 // ^^ this is the Toody logo; uncomment he above line to use it
 import './Header.css';
 
 const Header = () => {
   return (
     <div className="header">
+      <div className="header2">
+        <img src={toody} alt="toody" />
+        <h2>Toody</h2>
+      </div>
+      <div className="header3">
+        <a href="/profile">
+          <h3>My Profile</h3>
+        </a>
+      </div>
+
       {/*  TODO:
         You will need to complete this component. The header is the
         "navbar" that spans the top of the page and contains the 'Toody" logo
