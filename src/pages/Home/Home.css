@@ -18,12 +18,14 @@
     the outcome reflects the Figma. */
 
 .landing-left-align {
+    position: relative;
 	float: left;
     font-size: 32px;
     margin-left: 50px;
 }
 
 .landing-right-align {
+    position: relative;
 	float: right;
     font-size: 32px;
     margin-right: 50px;

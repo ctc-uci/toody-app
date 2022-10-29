@@ -50,16 +50,9 @@ const Home = () => {
   return (
     <div className="home">
       <div className="landing">
-        {/* TODO:
-            Add code here to display the text on the top panel
-            (the "landing page," as this div is named.) The
-            finished panel should display the two lines of text
-            shown on the Figma design.
-           */
-
-          /* the landing text shows up properly when the 
+        { /* the landing text shows up properly when the 
           browser window is restored down a smaller size
-          */
+          */}
           <div className="landing-text">
             <p className="landing-left-align">Hello Alex! Welcome to Toody.</p>
             <p className="landing-right-align">
@@ -67,7 +60,7 @@ const Home = () => {
             </p>
           </div>
            
-           }
+          
         <button
           className="scroll-down"
           onClick={e => {

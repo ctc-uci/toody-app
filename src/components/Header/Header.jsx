@@ -13,13 +13,11 @@ const Header = () => {
         at the top left and the "Profile" link at the top right. The logo
         has already been imported for you (see line 2). The completed header
         should route the user to the Profile page correctly. */}
-        <div className="logo">
-          <img src={toody}></img>
-          <p id="text">toody logo</p>
-        <div className="Profile">
-          <Link to="/profile">Profile</Link>
-        </div>
-        </div>
+          <img className="logo" src={toody} alt="toody logo"></img>
+          <p className="logoName">Toody</p>
+          <Link to="/profile" className="Profile">
+            My Profile
+          </Link>
     </div>
   );
 };

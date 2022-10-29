@@ -13,6 +13,31 @@
          This will help you when you get started.
     */
 
+.pic{
+    background-color: rgb(191, 191, 191);
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.info{
+    font-size: 20px;
+}
+
+.nums{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+}
+
+.desc{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
