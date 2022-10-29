@@ -46,7 +46,13 @@ const Home = () => {
             (the "landing page," as this div is named.) The
             finished panel should display the two lines of text
             shown on the Figma design.
-           */}
+           */
+          <div>
+            <p className="landing-left-align">Hello Alex! Welcome to Toody.</p>
+            <p className="landing-right-align">You&apos;ve been using Toody for 100 days!</p>
+          </div>
+           
+           }
         <button
           className="scroll-down"
           onClick={e => {
