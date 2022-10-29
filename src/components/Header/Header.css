@@ -1,7 +1,31 @@
 .header {
+    margin-top: 5.5vh;
+    margin-left: 2vw;
+    margin-right: 3vw;
+    margin-bottom: 5.5vh;
     position: fixed;
-    width: 100vw;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
 
 /* TODO: Add styling for your Header component
 here. */
+#profileLink {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#logoTitle {
+    font-size: 20px;
+}
+
+#logo {
+    width: 40px;
+    height: auto;
+}
+
