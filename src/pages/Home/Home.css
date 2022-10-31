@@ -10,12 +10,13 @@
     font-size: 64px;
 }
 
-/* TODO: Once you've added
-    HTML elements to complete the top panel,
-    or the "landing" page, add CSS here to
-    style them. These styles can be colors,
-    margins, or anything you like, as long as
-    the outcome reflects the Figma. */
+#p1 {
+    text-align: left;
+
+}
+#p2 {
+    text-indent: 210px;
+}
 
 .scroll-down {
     position: absolute;
