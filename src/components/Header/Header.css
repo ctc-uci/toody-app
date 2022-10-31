@@ -3,5 +3,30 @@
     width: 100vw;
 }
 
-/* TODO: Add styling for your Header component
-here. */
+img {
+    margin-top: 30px;
+    margin-right: 10px;
+    float: left;
+    padding-left: 20px;
+    
+}
+
+#text {
+    font-size:21px;
+    /* vertical-align:bottom; */
+    line-height: 50px;
+    
+
+}
+
+#profile {
+    float: right;
+    margin: -60px 0 0 0;
+    padding-right: 60px;
+    
+}
+
+#link {
+    text-decoration: none;
+    color: white;
+}
