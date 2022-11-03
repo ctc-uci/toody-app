@@ -1,17 +1,19 @@
 import React from 'react';
 import toody from '../../images/toody.svg';
-import './Header.css';
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <div className="header">
-      <div id="toody-logo">
+    <div className={styles.header}>
+      <div className={styles['toody-logo']}>
         <img src={toody} />
-        <p id="toody-logo-text">Toody</p>
+        <p className={styles['toody-logo-text']}>Toody</p>
       </div>
 
-      <div id="my-profile">
-        <a href="/profile" id="my-profile-link">My Profile</a>
+      <div className={styles['my-profile']}>
+        <a href="/profile" className={styles['my-profile-link']}>
+          My Profile
+        </a>
       </div>
     </div>
   );

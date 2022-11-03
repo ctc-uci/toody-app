@@ -7,31 +7,25 @@
   justify-content: center;
   text-align: center;
 
-  font-size: 64px;
+  font-size: 5em;
 }
 
-/* TODO: Once you've added
-    HTML elements to complete the top panel,
-    or the "landing" page, add CSS here to
-    style them. These styles can be colors,
-    margins, or anything you like, as long as
-    the outcome reflects the Figma. */
-#name-welcome {
+.name-welcome {
   position: absolute;
   top: 40vh;
-  left: 100px;
+  left: 1em;
 }
 
-#num-days {
+.num-days {
   position: absolute;
   top: 50vh;
-  right: 100px;
+  right: 1em;
 }
 
 .scroll-down {
   position: absolute;
   bottom: 0;
-  padding-bottom: 36px;
+  padding-bottom: 3em;
   background-color: transparent;
   border: 0;
   cursor: pointer;

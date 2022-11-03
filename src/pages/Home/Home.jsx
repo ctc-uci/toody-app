@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
 import { SlArrowDown } from 'react-icons/sl';
-import './Home.css';
+import styles from './Home.module.css';
 
 // hard coded to do list items
 const items = [
@@ -45,14 +45,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home">
-      <div className="landing">
+    <div className={styles.home}>
+      <div className={styles.landing}>
         <div>
-          <p id="name-welcome">Hello Alex! Welcome to Toody. </p>
-          <p id="num-days">You&apos;ve been using Toody for {days} days!</p>
+          <p className={styles['name-welcome']}>Hello Alex! Welcome to Toody. </p>
+          <p className={styles['num-days']}>You&apos;ve been using Toody for {days} days!</p>
         </div>
         <button
-          className="scroll-down"
+          className={styles['scroll-down']}
           onClick={e => {
             let join = document.getElementById('to-do');
             e.preventDefault();
@@ -62,10 +62,10 @@ const Home = () => {
           <SlArrowDown style={{ fontSize: '52px', color: '#FFFFFF' }} />
         </button>
       </div>
-      <div className="to-do" id="to-do">
+      <div className={styles['to-do']} id={styles['to-do']}>
         <ToDo items={items} />
       </div>
-      <div className="journal-entries">
+      <div className={styles['journal-entries']}>
         <JournalEntries entries={entries} />
       </div>
     </div>
