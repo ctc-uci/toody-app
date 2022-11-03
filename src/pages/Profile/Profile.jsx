@@ -14,14 +14,14 @@ const Profile = ({ firstName, lastName, stats }) => {
       For the name & stats to display, use the props (firstName, lastName, and stats)
       that have already been declared. */}
       <img src={person} className="pfp" />
-      <div className="person_name">
+      <div className="person-name">
         {firstName} {lastName}
       </div>
-      <div className="stats_container">
+      <div className="stats-container">
         {stats.map(stat => (
-          <div key="stat.description" className="stats_box">
-            <p className="stats_numbers">{stat.number}</p>
-            <p className="stats_description">{stat.description}</p>
+          <div key="stat.description" className="stats-box">
+            <p className="stats-numbers">{stat.number}</p>
+            <p className="stats-description">{stat.description}</p>
           </div>
         ))}
       </div>

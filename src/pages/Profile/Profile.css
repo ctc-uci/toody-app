@@ -14,7 +14,7 @@
     position: absolute;
 }
 
-.person_name{
+.person-name{
     position: absolute;
     top: 355px;
     left: 649px;
@@ -22,18 +22,18 @@
 }
 
 /* all the stat numbers */
-.stats_numbers{
+.stats-numbers{
     font-size: 64px;
     margin: 0;
 }
 
 /* cool stat, another stat, journal entries */
-.stats_description{
+.stats-description{
     font-size: 36px;
     margin: 0;
 }
 
-.stats_box {
+.stats-box {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
@@ -51,7 +51,7 @@
 }
 
 
-.stats_container {
+.stats-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;

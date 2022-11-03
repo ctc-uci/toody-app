@@ -10,7 +10,7 @@
     font-size: 64px;
 }
 
-.top_text{
+.top-text{
     text-align: left;
     position: absolute;
     width: 1412px;
@@ -20,7 +20,7 @@
 
 }
 
-.bottom_text{
+.bottom-text{
     text-align: right;
     position: absolute;
     width: 1412px;

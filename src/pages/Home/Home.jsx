@@ -52,8 +52,8 @@ const Home = () => {
             finished panel should display the two lines of text
             shown on the Figma design.
            */}
-        <p className="top_text">Hello Alex! Welcome to Toody!</p>
-        <p className="bottom_text">You’ve been using Toody for {days} days!</p>
+        <p className="top-text">Hello Alex! Welcome to Toody!</p>
+        <p className="bottom-text">You’ve been using Toody for {days} days!</p>
         <button
           className="scroll-down"
           onClick={e => {
