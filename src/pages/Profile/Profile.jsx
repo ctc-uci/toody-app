@@ -18,23 +18,23 @@ const Profile = ({ firstName, lastName, stats }) => {
       
       <img className="pic" src={person} alt="profile pic"></img>
         <div className="info">
-        
-          {firstName} {lastName}
-        </div>
-            <div className="nums">
-              {stats.map(s => (
-                  <div key={s.number}>{s.number}</div>
-                  )
-                )
-              }
-            </div>
-              <div className="desc">
-                {stats.map(s => (
-                    <div key={s.description}>{s.description}</div>
-                    )
-                  )
-                }
+          <div className='name'>
+            {firstName} {lastName}
+          </div>
+
+            <div className="stats">
+              <div className = "nums"> 
+                {stats.map(s => {
+                  return <div key={s.number}>{s.number}</div>;
+                 })}
               </div>
+              <div className="desc">
+                  {stats.map(s => {
+                    return <div key={s.description}>{s.description}</div>;
+                  })}
+              </div>
+          </div>
+        </div>
     </div>
   );
 };

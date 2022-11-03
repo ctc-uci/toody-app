@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: center;
 
-    font-size: 64px;
+    font-size: 50px;
 }
 
 /* TODO: Once you've added
@@ -18,17 +18,11 @@
     the outcome reflects the Figma. */
 
 .landing-left-align {
-    position: relative;
-	float: left;
-    font-size: 32px;
-    margin-left: 50px;
+    text-align: left
 }
 
 .landing-right-align {
-    position: relative;
-	float: right;
-    font-size: 32px;
-    margin-right: 50px;
+    text-indent: 200px;
 }
 
 .scroll-down {

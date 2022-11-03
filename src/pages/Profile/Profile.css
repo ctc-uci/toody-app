@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    gap: 80px;
 }
 
 /* TODO: Add your styles here
@@ -16,33 +17,49 @@
 .pic{
     background-color: rgb(191, 191, 191);
     
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    margin-left: 200px;
 }
 
 .info{
-    font-size: 30px;
-    margin-left: 50px;
-    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
 }
 
-.nums{
-    font-size: 30px;
+.name{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.stats {
     display: flex;
-    flex-direction: row;
-    width: 50px;
-    margin-left: 50px;
-    margin-right: 0px;
+    flex-direction: columnn; 
+    
+}
+
+
+.nums{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 510px;
+    
 }
 
 .desc{
     font-size: 20px;
     display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: space-between;
+    width: 590px;
+    margin-top: 60px;
+    margin-left: -530px;
+    
 }
+
+
 
 
 
