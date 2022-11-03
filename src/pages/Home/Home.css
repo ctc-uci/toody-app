@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: center;
 
-    font-size: 64px;
+    font-size: 50px;
 }
 
 /* TODO: Once you've added
@@ -16,6 +16,14 @@
     style them. These styles can be colors,
     margins, or anything you like, as long as
     the outcome reflects the Figma. */
+
+.landing-left-align {
+    text-align: left
+}
+
+.landing-right-align {
+    text-indent: 200px;
+}
 
 .scroll-down {
     position: absolute;

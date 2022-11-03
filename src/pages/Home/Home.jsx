@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
@@ -37,16 +37,30 @@ const entries = [
   },
 ];
 
+
 const Home = () => {
+  const [count, setCount] = useState(0);
+
+  // useEffect function involved in the random day # generation
+  useEffect(() => {
+      console.log('useEffect was called');
+      setCount(1 + Math.floor(Math.random() * 100))
+  }, []);
+
   return (
     <div className="home">
       <div className="landing">
-        {/* TODO:
-            Add code here to display the text on the top panel
-            (the "landing page," as this div is named.) The
-            finished panel should display the two lines of text
-            shown on the Figma design.
-           */}
+        { /* the landing text shows up properly when the 
+          browser window is restored down a smaller size
+          */}
+          <div className="landing-text">
+            <p className="landing-left-align">Hello Alex! Welcome to Toody.</p>
+            <p className="landing-right-align">
+              You&apos;ve been using Toody for {count} {count === 1 ? 'day' : 'days'}!
+            </p>
+          </div>
+           
+          
         <button
           className="scroll-down"
           onClick={e => {

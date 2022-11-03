@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
 import './App.css';
 
+// Group 5: Matthew Chang, Rachel Villamor, Sienna B
 // hard coded user
 const firstName = 'Jennifer';
 const lastName = 'Wong';

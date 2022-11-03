@@ -3,6 +3,7 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    gap: 80px;
 }
 
 /* TODO: Add your styles here
@@ -12,6 +13,52 @@
          and height of the browser window.
          This will help you when you get started.
     */
+
+.pic{
+    background-color: rgb(191, 191, 191);
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 200px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: columnn; 
+    
+}
+
+
+.nums{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 510px;
+    
+}
+
+.desc{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 590px;
+    margin-top: 60px;
+    margin-left: -530px;
+    
+}
+
 
 
 
