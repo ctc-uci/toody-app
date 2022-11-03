@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
 import { SlArrowDown } from 'react-icons/sl';
-import './Home.css';
+import styles from './Home.module.css';
 
 // hard coded to do list items
 const items = [
@@ -38,17 +38,21 @@ const entries = [
 ];
 
 const Home = () => {
+  const [days, setDays] = useState(0);
+
+  useEffect(() => {
+    setDays(Math.floor(Math.random() * 100 + 1));
+  }, []);
+
   return (
-    <div className="home">
-      <div className="landing">
-        {/* TODO:
-            Add code here to display the text on the top panel
-            (the "landing page," as this div is named.) The
-            finished panel should display the two lines of text
-            shown on the Figma design.
-           */}
+    <div className={styles.home}>
+      <div className={styles.landing}>
+        <div>
+          <p className={styles['name-welcome']}>Hello Alex! Welcome to Toody. </p>
+          <p className={styles['num-days']}>You&apos;ve been using Toody for {days} days!</p>
+        </div>
         <button
-          className="scroll-down"
+          className={styles['scroll-down']}
           onClick={e => {
             let join = document.getElementById('to-do');
             e.preventDefault();
@@ -58,10 +62,10 @@ const Home = () => {
           <SlArrowDown style={{ fontSize: '52px', color: '#FFFFFF' }} />
         </button>
       </div>
-      <div className="to-do" id="to-do">
+      <div className={styles['to-do']} id={styles['to-do']}>
         <ToDo items={items} />
       </div>
-      <div className="journal-entries">
+      <div className={styles['journal-entries']}>
         <JournalEntries entries={entries} />
       </div>
     </div>

@@ -1,19 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import person from '../../images/person.png';
-// ^^ blank avatar for profile pic, uncomment the above line to use
-import './Profile.css';
+import person from '../../images/person.png';
+import styles from './Profile.module.css';
 
 const Profile = ({ firstName, lastName, stats }) => {
   return (
-    <div className="profile-page">
-      {/* TODO:
-      Complete the profile page here.
-      For the profile picture, use the avatar placeholder image that has
-      already been imported for you on line 3.
-      For the name & stats to display, use the props (firstName, lastName, and stats)
-      that have already been declared. */}
-      {firstName} {lastName} {stats}
+    <div className={styles['profile-page']}>
+      <div className={styles.avatar}>
+        <img src={person} />
+      </div>
+      <div className={styles['profile-info']}>
+        <div className={styles.name}>
+          {firstName} {lastName}
+        </div>
+        <div className={styles.stats}>
+          {stats.map((s, index) => (
+            <div className={styles.stat} key={index}>
+              <div className={styles['stat-number']}>{s.number}</div>
+              <div className={styles['stat-description']}>{s.description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

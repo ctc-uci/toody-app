@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.my-profile {
+  margin-right: 5em;
+  font-size: 1.2em;
+  color: white;
+}
+
+.my-profile-link {
+  color: white;
+  text-decoration: none;
+}
+
+.toody-logo {
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1em;
+}
+
+.toody-logo-text {
+  font-size: 1.8em;
+}
