@@ -19,7 +19,7 @@ const Profile = ({ firstName, lastName, stats }) => {
       </div>
       <div className="stats-container">
         {stats.map(stat => (
-          <div key="stat.description" className="stats-box">
+          <div key={stat.description} className="stats-box">
             <p className="stats-numbers">{stat.number}</p>
             <p className="stats-description">{stat.description}</p>
           </div>
