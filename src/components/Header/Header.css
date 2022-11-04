@@ -1,7 +1,39 @@
 .header {
-    position: fixed;
-    width: 100vw;
+  position: absolute;
+  width: 100vw;
 }
 
-/* TODO: Add styling for your Header component
-here. */
+.toody_logo {
+  position: relative;
+  left: 34.81px;
+  top: 70.62px;
+}
+
+.toody_text {
+  position: relative;
+  display: inline;
+  left: 45px;
+  top: 62px;
+
+  font-family: 'Nunito';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.my_profile {
+  position: relative;
+  float: right;
+
+  right: 57px;
+  top: 67px;
+
+  font-family: 'Nunito';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}

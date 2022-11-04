@@ -1,8 +1,62 @@
 .profile-page {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.pfp {
+  padding: 100px;
+  background: #bfbfbf;
+  border-radius: 200px;
+  left: 153px;
+  top: 255px;
+  position: absolute;
+}
+
+.person-name {
+  position: absolute;
+  top: 355px;
+  left: 585px;
+  font-size: 36px;
+  margin-bottom: 9.5px;
+}
+
+/* all the stat numbers */
+.stats-numbers {
+  font-size: 64px;
+  margin: 0;
+}
+
+/* cool stat, another stat, journal entries */
+.stats-description {
+  font-size: 36px;
+  margin: 0;
+}
+
+.stats-box {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 685px;
+  height: 145px;
+  left: 580px;
+  top: 410px;
 }
 
 /* TODO: Add your styles here
@@ -12,7 +66,3 @@
          and height of the browser window.
          This will help you when you get started.
     */
-
-
-
-
