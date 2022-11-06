@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../components/Header/Header.jsx';
+import Header from '../../components/Header/Header.jsx';
 // import person from '../../images/person.png';
 // ^^ blank avatar for profile pic, uncomment the above line to use
 import './Profile.css';
