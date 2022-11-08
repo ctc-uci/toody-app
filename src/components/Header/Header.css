@@ -6,13 +6,13 @@
 /* TODO: Add styling for your Header component
 here. */
 
-.todoy {
+.toody {
     vertical-align: middle;
     margin-top: 20px;
     margin-left: 10px;
 }
 
-.todoy-text {
+.toody-text {
     vertical-align: bottom;
     display: inline-block;
     margin-left: 10px;
@@ -22,6 +22,6 @@ here. */
     float: right;
     margin-top: 30px;
     margin-right: 40px;
-    text-decoration: none !important;
+    text-decoration: none;
     color: white;
 }
