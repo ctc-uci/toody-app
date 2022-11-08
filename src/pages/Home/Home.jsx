@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+//import React from 'react';
 import PropTypes from 'prop-types';
 import ToDo from './ToDo';
 import JournalEntries from './JournalEntries';
@@ -38,9 +39,16 @@ const entries = [
 ];
 
 const Home = () => {
+  const [randint, setRandom] = useState(0);
+
+  useEffect(() => {
+    setRandom(Math.floor(Math.random() * (100 - 1 + 1)) + 1);
+  }, []);
   return (
     <div className="home">
       <div className="landing">
+        <p className="welcome-text">Hello Alex! Welcome to Toody.</p>
+        <p className="days-used">You have been using Toody for {randint} days!</p>
         {/* TODO:
             Add code here to display the text on the top panel
             (the "landing page," as this div is named.) The
