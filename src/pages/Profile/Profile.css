@@ -3,6 +3,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .pfp-container {
@@ -16,7 +17,6 @@
 }
 
 .pfp {
-  margin: 0;
   margin-left: 80px;
   margin-top: 80px;
 }

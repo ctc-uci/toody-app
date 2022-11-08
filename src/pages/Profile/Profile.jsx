@@ -5,26 +5,23 @@ import person from '../../images/person.png';
 import './Profile.css';
 
 const Profile = ({ firstName, lastName, stats }) => {
-  const displayStats = stats.map(s => {
-    return (
-      <div key={s.description} className="stats">
-        <h4 className="number">{s.number}</h4>
-        <p className="description">{s.description}</p>
-      </div>
-    );
-  });
 
   return (
     <div className="profile-page">
       <div className="pfp-container">
-        <img src={person} className="pfp"></img>
+        <img src={person} className="pfp" />
       </div>
 
       <div>
         <p className="name">
           {firstName} {lastName}
         </p>
-        {displayStats}
+        {stats.map(s => (
+          <div key={s.description} className="stats">
+            <h4 className="number">{s.number}</h4>
+            <p className="description">{s.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
