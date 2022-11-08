@@ -2,7 +2,8 @@
   height: 100vh;
   background-color: #32936f;
 
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -17,16 +18,19 @@
     margins, or anything you like, as long as
     the outcome reflects the Figma. */
 
-#line1 {
-  position: absolute;
-  margin: 250px 0 0 150px;
-  padding: 10px;
+.welcome-text {
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+  margin-left: 10%;
 }
 
-#line2 {
-  position: absolute;
-  margin: 400px 0 0 350px;
-  padding: 10px;
+.days-used {
+  display: inline-block;
+  text-align: right;
+  width: 70%;
+  margin-top: 0%;
+  margin-right: 10%;
 }
 
 .scroll-down {

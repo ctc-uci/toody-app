@@ -42,13 +42,13 @@ const Home = () => {
   const [randint, setRandom] = useState(0);
 
   useEffect(() => {
-    setRandom(Math.floor(Math.random() * 100 + 1));
+    setRandom(Math.floor(Math.random() * (100 - 1 + 1)) + 1);
   }, []);
   return (
     <div className="home">
       <div className="landing">
-        <p id="line1">Hello Alex! Welcome to Toody.</p>
-        <p id="line2">You have been using Toody for {randint} days!</p>
+        <p className="welcome-text">Hello Alex! Welcome to Toody.</p>
+        <p className="days-used">You have been using Toody for {randint} days!</p>
         {/* TODO:
             Add code here to display the text on the top panel
             (the "landing page," as this div is named.) The
