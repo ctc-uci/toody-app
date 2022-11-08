@@ -3,25 +3,22 @@
   width: 100vw;
 }
 
-/* TODO: Add styling for your Header component
-here. */
-
 .toody {
   vertical-align: middle;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 3vh;
+  margin-left: 1vw;
 }
 
 .toody-text {
   vertical-align: bottom;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 1vw;
 }
 
 .my-profile {
   float: right;
-  margin-top: 30px;
-  margin-right: 40px;
+  margin-top: 4vh;
+  margin-right: 4vw;
   text-decoration: none;
   color: white;
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import toody from '../../images/toody.svg';
-// import { Link } from 'react-router-dom';
-// ^^ this is the Toody logo; uncomment he above line to use it
 import './Header.css';
 
 const Header = () => {
