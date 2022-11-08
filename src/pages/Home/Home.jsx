@@ -39,16 +39,14 @@ const entries = [
 ];
 
 const Home = () => {
-
   const [randint, setRandom] = useState(0);
-  
+
   useEffect(() => {
     setRandom(Math.floor(Math.random() * 100 + 1));
   }, []);
   return (
     <div className="home">
       <div className="landing">
-
         <p id="line1">Hello Alex! Welcome to Toody.</p>
         <p id="line2">You have been using Toody for {randint} days!</p>
         {/* TODO:

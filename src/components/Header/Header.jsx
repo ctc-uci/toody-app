@@ -9,7 +9,9 @@ const Header = () => {
     <div className="header">
       <img src={toody} className="toody"></img>
       <div className="toody-text">Toody</div>
-      <a href="/profile" className="my-profile">My Profile</a>
+      <a href="/profile" className="my-profile">
+        My Profile
+      </a>
     </div>
   );
 };

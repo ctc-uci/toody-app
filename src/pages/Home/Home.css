@@ -1,13 +1,13 @@
 .landing {
-    height: 100vh;
-    background-color: #32936F;
+  height: 100vh;
+  background-color: #32936f;
 
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    font-size: 64px;
+  font-size: 64px;
 }
 
 /* TODO: Once you've added
@@ -17,40 +17,40 @@
     margins, or anything you like, as long as
     the outcome reflects the Figma. */
 
-#line1{
-    position: absolute;
-    margin: 250px 0 0 150px;
-    padding: 10px;
+#line1 {
+  position: absolute;
+  margin: 250px 0 0 150px;
+  padding: 10px;
 }
 
-#line2{
-    position: absolute;
-    margin: 400px 0 0 350px;
-    padding: 10px;
+#line2 {
+  position: absolute;
+  margin: 400px 0 0 350px;
+  padding: 10px;
 }
 
 .scroll-down {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 36px;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 36px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .to-do {
-    height: 100vh;
+  height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .journal-entries {
-    height: 100vh;
-    background-color: #BF9676;
+  height: 100vh;
+  background-color: #bf9676;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
