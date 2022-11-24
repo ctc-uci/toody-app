@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import person from '../../images/person.png';
-// ^^ blank avatar for profile pic, uncomment the above line to use
+import person from '../../images/person.png';
 import './Profile.css';
 
 const Profile = ({ firstName, lastName, stats }) => {
@@ -13,7 +12,18 @@ const Profile = ({ firstName, lastName, stats }) => {
       already been imported for you on line 3.
       For the name & stats to display, use the props (firstName, lastName, and stats)
       that have already been declared. */}
-      {firstName} {lastName} {stats}
+       <img src={person} className="pfp" />
+      <div className="person_name">
+        {firstName} {lastName}
+      </div>
+      <div className="stats_container">
+        {stats.map(stat => (
+          <div key="stat.description" className="stats_box">
+            <p className="stats_numbers">{stat.number}</p>
+            <p className="stats_description">{stat.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

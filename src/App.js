@@ -5,7 +5,7 @@ import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
 import './App.css';
 
-// hard coded user
+// Independent Group: Tannvi Banerjee
 const firstName = 'Jennifer';
 const lastName = 'Wong';
 const stats = [
