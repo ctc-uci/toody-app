@@ -1,6 +1,6 @@
 import React from 'react';
-// import toody from '../../images/toody.svg';
-// ^^ this is the Toody logo; uncomment he above line to use it
+import toody from '../../images/toody.svg';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -12,6 +12,11 @@ const Header = () => {
         at the top left and the "Profile" link at the top right. The logo
         has already been imported for you (see line 2). The completed header
         should route the user to the Profile page correctly. */}
+        <img src={toody} alt="Toody Logo" className="toody_logo" />
+      <p className="toody_text">Toody</p>
+      <Link to="/profile" className="my_profile">
+        My Profile
+      </Link>
     </div>
   );
 };
